@@ -1,0 +1,339 @@
+* {
+ 	box-sizing: border-box;
+}
+
+body {
+	width: 1024px;
+	color: #fff;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	background-color: #fff;
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	margin: 0;
+}
+
+.slick-dots {
+	position: fixed;
+	z-index: 10;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	right: 26px;
+	top: 384px;
+	transform: translate(-50%,0);
+}
+
+.dots {
+	width: 17px;
+	height: 17px;
+	background: #fff;
+	border-radius: 100%;
+	margin: 5px 0;
+}
+
+.active {
+	background: #f78b1f;
+}
+
+.layer1 {
+	height: 768px;
+	background: url('../img/layer1.jpg') no-repeat center center;
+	background-size: cover;
+	position: relative;
+	color: #0d319c;
+}
+
+.layer1 span {
+	display: block;
+}
+
+.layer1>span {
+	font-size: 50px;
+	max-width: 1190px;
+	padding: 125px 0 0 75px;
+}
+
+.layer1>div, .layer1 a {
+	position: absolute !important;
+	z-index: 5;
+}
+
+.target {
+	top: 261px;
+    left: 561px;
+	display: flex;
+	align-items: center;
+}
+
+.target div {
+	border: 1px solid #db6620;
+	border-radius: 100%;
+	background-color: rgba(219,102,32,0.3);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 55px;
+	height: 55px;
+	margin-right: 10px;
+}
+
+.target>div {
+	position: relative;
+}
+
+.ring {
+	position: absolute;
+	animation-name: ring;
+	animation-duration: 7s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+.ring1 {
+	position: absolute;
+	animation-name: ring;
+	animation-duration: 7s;
+	animation-delay: 2s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+.ring2 {
+	position: absolute;
+	animation-name: ring;
+	animation-duration: 7s;
+	animation-delay: 4s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+@keyframes ring {
+	0% {
+		transform: scale(0);
+	}
+
+	100%{
+		transform: scale(1);
+	}
+}
+
+.hypoglycemia {
+	top: 406px;
+    left: 220px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.hypoglycemia div {
+	border: 1px solid #db6620;
+	border-radius: 100%;
+	background-color: rgba(219,102,32,0.3);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 30px;
+	height: 30px;
+}
+
+.risks {
+	bottom: 235px;
+	right: 150px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.risks div, .sequela div {
+	border: 1px solid #db6620;
+	border-radius: 100%;
+	background-color: rgba(219,102,32,0.3);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 17px;
+	height: 17px;
+	width: 17px;
+	height: 17px;
+}
+
+.sequela {
+	bottom: 214px;
+    left: 412px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.doun {
+	position: absolute;
+	bottom: 17px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: #fff;
+}
+
+.doun div {
+	background: url('../img/layer-arrow.png') no-repeat center center;
+	background-size: contain;
+	width: 47px;
+	height: 26px;
+	margin-top: 10px;
+}
+
+.layer2 {
+	height: 768px;
+	background: url('../img/layer2.jpg') no-repeat center center;
+	background-size: cover;
+	position: relative;
+}
+
+.layer2 div a span {
+	position: absolute;
+	z-index: 5;
+}
+
+.layer2>span {
+	position: absolute;
+	display: block;
+	font-size: 50px;
+	width: 540px;
+	top: 172px;
+	transform: translate(50%,0);
+	text-align: center;
+}
+
+.ice1 {
+	position: absolute;
+	width: 140px;
+	height: 195px;
+	background: url('../img/ice1.png') no-repeat center center;
+	background-size: contain;
+	right: 0;
+	top: 40px;
+}
+
+.ice2 {
+	position: absolute;
+	width: 113px;
+	height: 104px;
+	background: url('../img/ice2.png') no-repeat center center;
+	background-size: contain;
+	left: 225px;
+	bottom: 232px;
+}
+
+.ice3 {
+	position: absolute;
+	width: 58px;
+	height: 59px;
+	background: url('../img/ice3.png') no-repeat center center;
+	background-size: contain;
+	right: 250px;
+	bottom: 115px;
+}
+
+.ice4 {
+	position: absolute;
+	width: 49px;
+	height: 41px;
+	background: url('../img/ice4.png') no-repeat center center;
+	background-size: contain;
+	left: 80px;
+	top: 160px;
+}
+
+.layer3 {
+	width: 1024px;
+	height: 768px;
+	overflow: hidden;
+	position: relative;
+}
+
+.slider {
+	position: relative;
+	display: flex;
+	width: 3072px;
+	height: 768px;
+	transition: all .5s cubic-bezier(0.4, 0, 1, 1);
+}
+
+.slide1 {
+	background: url('../img/slide1.jpg') no-repeat center center;
+	background-size: cover;
+	width: 1024px;
+	height: 768px;
+}
+
+.slide2 {
+	background: url('../img/slide2.jpg') no-repeat center center;
+	background-size: cover;
+	width: 1024px;
+	height: 768px;
+}
+
+.slide3 {
+	background: url('../img/slide3.jpg') no-repeat center center;
+	background-size: cover;
+	width: 1024px;
+	height: 768px;
+}
+
+input[type='range'] {
+	position: absolute;
+	bottom: 74px;
+	width: 643px;
+	height: 13px;
+	z-index: 5;
+	left: 512px;
+	transform: translate(-50%,0);
+	-webkit-appearance: none;
+	background: #435063;
+}
+
+input[type=range]:focus {
+  outline: none; 
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: 0px;
+  width: 45px;
+  height: 60px;
+  background: url('../img/slider-thumb.png') no-repeat center center;
+  background-size: contain; 
+  cursor: pointer;
+  margin-top: -25px;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 13px;
+  cursor: pointer;
+}
+
+.date1988 {
+	position: absolute;
+	bottom: 26px;
+	left: 194px;
+}
+
+.date2009 {
+	position: absolute;
+	bottom: 26px;
+	left: 512px;
+    transform: translate(-50%,0);
+}
+
+.date2016 {
+	position: absolute;
+	bottom: 26px;
+	right: 188px;
+}

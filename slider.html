@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Slider</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="./js/script.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+</head>
+<body>
+	<div class="slick-dots">
+		<div id="dot1" class="dots active" onclick="dots(1);"></div>
+		<div id="dot2" class="dots"  onclick="dots(2);"></div>
+		<div id="dot3" class="dots"  onclick="dots(3);"></div>
+	</div>
+	<div class="layer1">
+		<span>Всегда ли цели терапии СД2 на поверхности?</span>
+		<div class="target">
+			<div>
+				<div class="ring"></div>
+				<div class="ring1"></div>
+				<div class="ring2"></div>
+			</div>
+			<span>Цель по HbA1c</span>
+		</div>
+		<div class="hypoglycemia">
+			<span>Гипогликемия</span>
+			<div>
+				<div class="ring"></div>
+				<div class="ring1"></div>
+				<div class="ring2"></div>
+			</div>
+		</div>
+		<div class="risks">
+			<span>СС риски</span>
+			<div>
+				<div class="ring"></div>
+				<div class="ring1"></div>
+				<div class="ring2"></div>
+			</div>
+		</div>
+		<div class="sequela">
+			<span>Осложнения СД</span>
+			<div>
+				<div class="ring"></div>
+				<div class="ring1"></div>
+				<div class="ring2"></div>
+			</div>
+		</div>
+		<a class="doun" onclick="scrollDown(1);">
+			<span>Листайте вниз</span>
+			<div></div>
+		</a>
+	</div>
+	<div class="layer2">
+		<span>Основа терапии — патогенез СД2</span>
+		<div class="ice1"></div>
+		<div class="ice2"></div>
+		<div class="ice3"></div>
+		<div class="ice4"></div>
+		<a class="doun" onclick="scrollDown(2);">
+			<span>Листайте вниз</span>
+			<div></div>
+		</a>
+	</div>
+	<div class="layer3">
+		<div class="slider">
+			<div class="slide1"></div>
+			<div class="slide2"></div>
+			<div class="slide3"></div>
+		</div>
+		<input type="range" id="years" name="years"
+         min="1" max="3" value="1" step="1" onchange="slider(this.value);">
+         <span class="date1988">1988</span>
+         <span class="date2009">2009</span>
+         <span class="date2016">2016</span>
+	</div>
+</body>
+</html>
