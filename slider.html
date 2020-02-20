@@ -5,14 +5,13 @@
 	<title>Slider</title>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
-	<script src="./js/script.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
 </head>
 <body>
 	<div class="slick-dots">
-		<div id="dot1" class="dots active" onclick="dots(1);"></div>
-		<div id="dot2" class="dots"  onclick="dots(2);"></div>
-		<div id="dot3" class="dots"  onclick="dots(3);"></div>
+		<div id="dot1" class="dots active"></div>
+		<div id="dot2" class="dots"></div>
+		<div id="dot3" class="dots"></div>
 	</div>
 	<div class="layer1">
 		<span>Всегда ли цели терапии СД2 на поверхности?</span>
@@ -48,7 +47,7 @@
 				<div class="ring2"></div>
 			</div>
 		</div>
-		<a class="doun" onclick="scrollDown(1);">
+		<a class="doun" id="down1">
 			<span>Листайте вниз</span>
 			<div></div>
 		</a>
@@ -59,7 +58,7 @@
 		<div class="ice2"></div>
 		<div class="ice3"></div>
 		<div class="ice4"></div>
-		<a class="doun" onclick="scrollDown(2);">
+		<a class="doun" id="down2">
 			<span>Листайте вниз</span>
 			<div></div>
 		</a>
@@ -71,10 +70,11 @@
 			<div class="slide3"></div>
 		</div>
 		<input type="range" id="years" name="years"
-         min="1" max="3" value="1" step="1" onchange="slider(this.value);">
+         min="0" max="100" value="1" step="1" oninput="slider(this.value);">
          <span class="date1988">1988</span>
          <span class="date2009">2009</span>
          <span class="date2016">2016</span>
 	</div>
+	<script src="./js/script.js"></script>
 </body>
 </html>
